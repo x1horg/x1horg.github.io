@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
   
-  <title>文章: 2024 - X1H.org</title>
+  <title>搜尋 - X1H.org</title>
   
     <link rel="shortcut icon" href="/favicon.png">
   
@@ -16,11 +16,11 @@
   
   
   
-  <meta property="og:title" content="文章: 2024 - X1H.org" />
+  <meta property="og:title" content="搜尋 - X1H.org" />
   
   <meta property="og:type" content="website" />
   
-  <meta property="og:url" content="http://www.x1h.org/archives/2024/index.html" />
+  <meta property="og:url" content="http://www.x1h.org/search/index.html" />
   
   <meta property="og:image" content="/favicon.png" />
   
@@ -77,6 +77,10 @@
   
   
   
+<link rel="stylesheet" href="/css/search.css">
+
+  
+  
   
 
   
@@ -95,6 +99,8 @@
         data-toc="true"
         data-toc-max-depth="2"
         
+        
+        data-search-path="search.json"
         
     >
         <nav id="theme-nav">
@@ -123,44 +129,19 @@
         </div>
     </div>
 </nav>
-        <div class="container">
+        
+    <div class="container">
     <div class="meta">
-        <div class="type">
-            
-            
-        </div>
-
-        <h2 class="title">文章</h2>
+        <h2 class="title">
+            搜尋
+        </h2>
     </div>
-
-    <div class="divider"></div>
-
-    <div class="post-list archives">
-        
-        <article class="post-list-item">
-            <a href="/2024/11/22/hello-world/">
-                
-                <div class="content">
-                    
-                    <div class="title">
-                        Hello World
-                    </div>
-                    
-                    
-                    <div class="time">
-                        <span>November</span>
-                        <span>&nbsp;22,&nbsp;</span>
-                        <span>2024</span>
-                    </div>
-                    
-                </div>
-            </a>
-        </article>
-        
-    </div>
-
-    
+    <form id="search-form">
+        <input type="text" id="searchbox" placeholder="輸入關鍵詞搜尋...">
+    </form>
+    <div class="post-list archives" id="search-results"></div>
 </div>
+
         <footer>
     <div class="inner">
         <div class="links">
@@ -204,6 +185,10 @@
 
         
 <script src="/js/main.js"></script>
+
+        
+        
+<script src="/js/search.js"></script>
 
         
         
